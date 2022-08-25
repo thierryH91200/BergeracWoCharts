@@ -16,6 +16,10 @@
 		E4EF50C328B8034900228BC5 /* BergeracWoChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF50C228B8034900228BC5 /* BergeracWoChartsTests.swift */; };
 		E4EF50CD28B8034900228BC5 /* BergeracWoChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF50CC28B8034900228BC5 /* BergeracWoChartsUITests.swift */; };
 		E4EF50CF28B8034900228BC5 /* BergeracWoChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF50CE28B8034900228BC5 /* BergeracWoChartsUITestsLaunchTests.swift */; };
+		E4EF50DE28B8050E00228BC5 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E4EF50DD28B8050E00228BC5 /* LaunchAtLogin */; };
+		E4EF50E128B8056100228BC5 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = E4EF50E028B8056100228BC5 /* SwiftDate */; };
+		E4EF50E428B805A600228BC5 /* SwiftyTranslate in Frameworks */ = {isa = PBXBuildFile; productRef = E4EF50E328B805A600228BC5 /* SwiftyTranslate */; };
+		E4EF50E728B8069200228BC5 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E4EF50E628B8069200228BC5 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EF50E128B8056100228BC5 /* SwiftDate in Frameworks */,
+				E4EF50E428B805A600228BC5 /* SwiftyTranslate in Frameworks */,
+				E4EF50DE28B8050E00228BC5 /* LaunchAtLogin in Frameworks */,
+				E4EF50E728B8069200228BC5 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +108,7 @@
 		E4EF50A928B8034700228BC5 /* BergeracWoCharts */ = {
 			isa = PBXGroup;
 			children = (
+				E4EF50DB28B803E300228BC5 /* Group */,
 				E4EF50AA28B8034700228BC5 /* AppDelegate.swift */,
 				E4EF50AC28B8034700228BC5 /* ViewController.swift */,
 				E4EF50AE28B8034700228BC5 /* Document.swift */,
@@ -129,6 +138,13 @@
 			path = BergeracWoChartsUITests;
 			sourceTree = "<group>";
 		};
+		E4EF50DB28B803E300228BC5 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +161,12 @@
 			dependencies = (
 			);
 			name = BergeracWoCharts;
+			packageProductDependencies = (
+				E4EF50DD28B8050E00228BC5 /* LaunchAtLogin */,
+				E4EF50E028B8056100228BC5 /* SwiftDate */,
+				E4EF50E328B805A600228BC5 /* SwiftyTranslate */,
+				E4EF50E628B8069200228BC5 /* Charts */,
+			);
 			productName = BergeracWoCharts;
 			productReference = E4EF50A728B8034700228BC5 /* BergeracWoCharts.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +239,12 @@
 				Base,
 			);
 			mainGroup = E4EF509E28B8034700228BC5;
+			packageReferences = (
+				E4EF50DC28B8050E00228BC5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				E4EF50DF28B8056100228BC5 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				E4EF50E228B805A600228BC5 /* XCRemoteSwiftPackageReference "SwiftyTranslate" */,
+				E4EF50E528B8069200228BC5 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = E4EF50A828B8034700228BC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +611,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4EF50DC28B8050E00228BC5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E4EF50DF28B8056100228BC5 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		E4EF50E228B805A600228BC5 /* XCRemoteSwiftPackageReference "SwiftyTranslate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cpageler93/SwiftyTranslate";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E4EF50E528B8069200228BC5 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4EF50DD28B8050E00228BC5 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4EF50DC28B8050E00228BC5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		E4EF50E028B8056100228BC5 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4EF50DF28B8056100228BC5 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		E4EF50E328B805A600228BC5 /* SwiftyTranslate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4EF50E228B805A600228BC5 /* XCRemoteSwiftPackageReference "SwiftyTranslate" */;
+			productName = SwiftyTranslate;
+		};
+		E4EF50E628B8069200228BC5 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4EF50E528B8069200228BC5 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E4EF50B028B8034700228BC5 /* Document.xcdatamodeld */ = {
